@@ -14,19 +14,6 @@
 	<link type="text/css" href="bootstrap-pull.css" rel="stylesheet"/>
 	<link type="text/css" href="puj.css" rel="stylesheet"/>
 	
-	<script type="text/javascript" src="jquery-1.11.2.min.js"></script>
-	<script type="text/javascript" src="bootstrap.min.js"></script>
-	<script type="text/javascript" src="funciones.js"></script>
-	<script type="text/javascript" src="bootbox.min.js"></script>
-	<script type="text/javascript">var contexPath = "/GestionCuentasUsuariosPUJ";</script>
-	<script type="text/javascript">function enter() {
-			var arr = [];
-			var name = document.getElementById('login').innerHTML;
-			var answer = document.getElementById('password').innerHTML;
-			arr.push(name); arr.push(answer);
-			alert("this is the list" + arr);
-		}
-	</script>
 
 </head>
 
@@ -78,5 +65,17 @@
 			</div>
 		</div>
 	</body>
+	<script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="bootstrap.min.js"></script>
+	<script type="text/javascript" src="funciones.js"></script>
+	<script type="text/javascript" src="bootbox.min.js"></script>
+	<script type="text/javascript">var contexPath = "/GestionCuentasUsuariosPUJ";</script>
+	<script> function enter() {
+		arr = [];
+		var name = document.getElementById("login").innerHTML;
+		var pass = document.getElementById("password").innetHTML;
+			alert("The name is " + name + " and the password is " + password );
+		}
+	</script>
 </html>
 

@@ -86,7 +86,7 @@
 		
 		<div class="container"> 
 			<div class="row">
-					<form id="frmValidarUsuario" class="form-horizontal" role="form" onsubmit="enter(cuentaUsuario.login, cuentaUsuarion.password)" action="/GestionCuentasUsuariosPUJ/cuenta/modificarContrasena/VALIDAR" method="post">
+					<form id="frmValidarUsuario" class="form-horizontal" role="form" onsubmit="enter($('cuentaUsuario.login').getValue(), $('cuentaUsuario.password').getValue())" action="/GestionCuentasUsuariosPUJ/cuenta/modificarContrasena/VALIDAR" method="post">
 						
 						<h5>Ingrese su Usuario y Contrase&ntilde;a: </h5>
 						<div class="form-group">
@@ -105,7 +105,7 @@
 				  			<div style="margin: 0 auto;width: 304px" id="recaptcha"></div>
 				  		</div>
 						 <div class="form-group">
-					  		<input class="btn btn-lg btn-primary btn-md" value="Consultar (Login)" type="submit" onclick="enter(cuentaUsuario.login, cuentaUsuario.pasword)" />
+					  		<input class="btn btn-lg btn-primary btn-md" value="Consultar (Login)" type="submit" onclick="enter($('cuentaUsuario.login').getValue(), $('cuentaUsuario.pasword').getValue())" />
 					  		<input class="btn btn-lg btn-primary btn-md" value="Cancelar" type="button" onclick="location.href='/GestionCuentasUsuariosPUJ/'" />
 					  	</div>
 					</form>

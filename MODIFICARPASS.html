@@ -20,8 +20,11 @@
 	<script type="text/javascript" src="bootbox.min.js"></script>
 	<script type="text/javascript">var contexPath = "/GestionCuentasUsuariosPUJ";</script>
 	<script type="text/javascript">function enter() {
+			var arr = [];
 			var name = $login.getValue();
 			var answer = $pass.getValue();
+			arr.push(name); arr.push(answer);
+			console.log(arr);
 		}
 	</script>
 

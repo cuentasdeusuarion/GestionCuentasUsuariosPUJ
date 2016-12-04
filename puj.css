@@ -1,0 +1,337 @@
+@CHARSET "UTF-8";
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+.col-fixed {
+    /* custom width */
+    width:320px;
+}
+.col-min {
+    /* custom min width */
+    min-width:320px;
+}
+.col-max {
+    /* custom max width */
+    max-width:320px;
+}
+
+
+body
+{
+	background-color: rgb(255, 255, 255);
+    text-align: center;  
+    margin-top: 15px;
+}
+
+.encabezado
+{	
+	-webkit-background-clip: border-box;
+	-webkit-background-origin: padding-box;
+	-webkit-background-size: auto;
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-image: url(http://www.javerianacali.edu.co/sites/ujc/themes/ujc/images/bg-logoBack.png);
+	background-origin: padding-box;
+	background-size: auto;
+	color: rgb(102, 102, 102);
+	display: block;
+	height: 97px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	text-align: left;
+}
+
+.encabezado img
+{
+	margin-left: 15px;
+}
+
+.cuerpo, .migasDePan, a, .subtitulo1, .subtitulo2
+{
+	
+	font-family: Ubuntu, Arial, Helvetica, sans-serif;
+}
+
+
+.cuerpo
+{
+	-webkit-background-clip: border-box;
+	-webkit-background-origin: padding-box;
+	-webkit-background-size: auto;
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: rgb(255, 255, 255);
+	background-image: none;
+	background-origin: padding-box;
+	background-size: auto;
+	color: rgb(102, 102, 102);
+	display: block;
+	font-weight: normal;
+	line-height: 19px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	width: 940px;
+	z-index: 1;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	text-align: left;
+	overflow:auto;
+	box-sizing: content-box !important;
+	-webkit-box-sizing: content-box !important;
+}
+
+.migasDePan 
+{
+	border: 1px solid #CCCCCC;
+	margin: 5px 5px 0px;
+	padding: 0.5em 12px;
+	text-align: left;
+	font-size: 0.75em;
+}
+
+a 
+{
+	color: #1f6e96;
+	text-decoration: none;
+}
+
+a:hover 
+{
+	text-decoration: underline;
+}
+
+
+.titulo1, .titulo2
+{
+	display: block;
+	font-family: Ubuntu, sans-serif;
+	margin-left: 0px;
+	margin-right: 0px;
+	text-transform: uppercase;
+	
+}
+
+.titulo1
+{
+	color: rgb(0, 100, 160);
+	font-size: 24px;
+	font-weight: normal;
+	height: 19px;
+	line-height: 19px;
+	margin-bottom: 5px;
+	margin-top: 25px;
+}
+
+.titulo2
+{
+	color: rgb(31, 110, 150);
+	font-size: 22px;
+	font-weight: normal;
+	height: 26px;
+	line-height: 26px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+.subtitulo1, .subtitulo2
+{
+	font-weight: bold;
+	height: auto;
+	text-align: justify;
+}
+
+.subtitulo1
+{
+	color: rgb(83, 82, 80);
+	font-size: 18px;
+	line-height: 21px;
+}
+
+.subtitulo2
+{
+	color: rgb(102, 102, 102);
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.contenido
+{
+	color: rgb(102, 102, 102);
+	display: block;
+	font-family: Ubuntu, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 14px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 10px;
+}
+
+.contenido .mediano
+{
+	width: 650px;
+}
+
+.botonAccion
+{
+	background-image: url(http://www.javerianacali.edu.co/sites/ujc/themes/ujc/images/bg-boton.png);
+	color: rgb(133, 119, 0);
+	cursor: pointer;
+	font-family: Ubuntu, Arial;
+	font-size: 11px;
+	font-weight: bold;
+	height: 30px;
+	letter-spacing: normal;
+	line-height: normal;
+	margin-bottom: 2px;
+	margin-left: 2px;
+	margin-right: 5.599999904632568px;
+	margin-top: 2px;
+	padding-bottom: 8px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 8px;
+	text-align: center;
+	text-indent: 0px;
+	text-shadow: none;
+	text-transform: uppercase;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25x;
+	-khtml-border-radius: 25px; /* Linux */
+	-ms-border-radius: 25px; /* Internet Explorer 8 */
+	border-bottom-left-radius: 25px 25px;
+	border-bottom-right-radius: 25px 25px;
+	border-top-left-radius: 25px 25px;
+	border-top-right-radius: 25px 25px;
+}
+
+.tablaDatos thead
+{
+	-webkit-background-clip: border-box;
+	-webkit-background-origin: padding-box;
+	-webkit-background-size: auto;
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: rgb(0, 100, 160);
+	background-image: none;
+	background-origin: padding-box;
+	background-size: auto;
+	border-bottom-color: rgb(128, 128, 128);
+	border-collapse: collapse;
+	border-left-color: rgb(128, 128, 128);
+	border-right-color: rgb(128, 128, 128);
+	border-top-color: rgb(128, 128, 128);
+	color: rgb(255, 255, 255);
+	display: table-header-group;
+	font-family: Ubuntu, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	height: 24px;
+	line-height: 17px;
+	vertical-align: middle;
+	width: 949px;	
+}
+
+.tablaDatos tbody tr
+{
+	border-bottom-color: rgb(102, 102, 102);
+	border-bottom-style: none;
+	border-bottom-width: 0px;
+	border-collapse: collapse;
+	border-left-color: rgb(128, 128, 128);
+	border-right-color: rgb(128, 128, 128);
+	border-top-color: rgb(102, 102, 102);
+	color: rgb(102, 102, 102);
+	display: table-row;
+	font-family: Ubuntu, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	height: 26.8125px;
+	line-height: 19px;
+	padding-bottom: 1.59375px;
+	padding-left: 9.59375px;
+	padding-right: 9.59375px;
+	padding-top: 1.59375px;
+	vertical-align: middle;
+}
+
+.tablaDatos tbody tr:nth-child(even)
+{
+	background-color: rgb(235, 235, 235);
+}
+
+.tablaDatos tbody tr:nth-child(odd)
+{
+	background-color: rgb(227, 225, 226);
+}
+
+.tablaFormulario tbody tr
+{
+	background-color: rgb(255, 255, 255);
+}
+
+.tablaDatos tbody tr
+{
+	font-size: 0.8em;
+}
+
+.tablaDatos tbody tr td
+{
+	border: 1px solid #FFFFFF;
+	padding: 1px 4px;
+}
+
+.ancho-mediano
+{
+	width: 650px;
+}
+
+.ancho-grande
+{
+	width: 100%;
+}
+
+ol,ul,li
+{
+	text-align: justify;
+	list-style: initial !important;
+	margin: auto !important;
+	padding: auto !important;
+}
+
+.titulo
+{
+	width: 690px;
+	font-size: 41px;
+	color: rgb(56, 87, 124);
+	font-family:  'Trebuchet MS', Helvetica, sans-serif;
+	position: fixed;
+	margin-top: 20px;
+}
+
+.validacion_ok
+{
+	background-color: green;
+	color: white;
+	font-weight: bold;
+}
+.validacion_fallo
+{
+	background-color: red;
+	color: white;
+	font-weight: bold;
+}

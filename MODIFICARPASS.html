@@ -51,38 +51,6 @@
 	</div>
 </div>
 
-		<script type="text/javascript">
-			function callbackCatpcha(){
-			var response = grecaptcha.getResponse();
-			Ext.Ajax.request({
-				url : '/GestionCuentasUsuariosPUJ/captcha/getCaptchaResponse',
-				method : 'POST',
-				params : {
-					response : response
-				},
-				success : function(response){
-					var resData = Ext.JSON.decode(response.responseText);
-					if(resData.success){
-						$('input[type="submit"]').prop('disabled', false);
-					}else{
-						grecaptcha.reset();
-					}
-					
-				},
-				failure : function(response){
-					console.log(response);
-				}
-			});
-		}	
-		function onloadCallback () {
-			  $('input[type="submit"]').prop('disabled', true);
-			  grecaptcha.render('recaptcha', {
-		          'sitekey' : '6LeaDiQTAAAAABefLFYBxzxyilOTptna9wTj4m5x',
-        		  'callback' : callbackCatpcha
-	          });
-
-		  };
-		</script>
 		
 		<div class="container"> 
 			<div class="row">

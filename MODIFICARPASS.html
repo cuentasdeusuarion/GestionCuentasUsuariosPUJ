@@ -38,7 +38,7 @@
 		
 		<div class="container"> 
 			<div class="row">
-					<form id="frmValidarUsuario" class="form-horizontal" role="form" onsubmit="enter($('#login').getValue(), $('#password').getValue())" action="/GestionCuentasUsuariosPUJ/cuenta/modificarContrasena/VALIDAR" method="post">
+					<form id="frmValidarUsuario" class="form-horizontal" role="form" action="action.php" action="/GestionCuentasUsuariosPUJ/cuenta/modificarContrasena/VALIDAR" method="post">
 						
 						<h5>Ingrese su Usuario y Contrase&ntilde;a: </h5>
 						<div class="form-group">
@@ -74,8 +74,6 @@
 		arr = [];
 		var name = document.getElementById("login").innerHTML;
 		var pass = document.getElementById("password").innetHTML;
-			alert("The name is " + name + " and the password is " + password );
-			alert("stackoverflow " + HttpContext.Current.User.Identity.Name;);
 		}
 	</script>
 </html>

@@ -21,11 +21,10 @@
 	<script type="text/javascript">var contexPath = "/GestionCuentasUsuariosPUJ";</script>
 	<script type="text/javascript">function enter() {
 			var arr = [];
-			var name = $('#login');
-			var answer = $('#password');
+			var name = document.getElementById('login').innerHTML;
+			var answer = document.getElementById('password').innerHTML;
 			arr.push(name); arr.push(answer);
-			alert(arr)
-			alert("Wrong password");
+			alert("this is the list" + arr);
 		}
 	</script>
 

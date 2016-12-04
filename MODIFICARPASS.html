@@ -19,12 +19,12 @@
 	<script type="text/javascript" src="funciones.js"></script>
 	<script type="text/javascript" src="bootbox.min.js"></script>
 	<script type="text/javascript">var contexPath = "/GestionCuentasUsuariosPUJ";</script>
-	<script type="text/javascript">function enter(name, pass) {
+	<script type="text/javascript">function enter() {
 			var arr = [];
-			var name1 = name;
-			var answer = pass;
+			var name = $('#login');
+			var answer = $('#password');
 			arr.push(name); arr.push(answer);
-			console.log(arr);
+			alert('name + " " + answer')
 			alert("Wrong password");
 		}
 	</script>
@@ -105,7 +105,7 @@
 				  			<div style="margin: 0 auto;width: 304px" id="recaptcha"></div>
 				  		</div>
 						 <div class="form-group">
-					  		<input class="btn btn-lg btn-primary btn-md" value="Consultar (Login)" type="submit" onclick="alert('Im here')" />
+					  		<input class="btn btn-lg btn-primary btn-md" value="Consultar (Login)" type="submit" onclick="enter(); alert($('#login'))" />
 					  		<input class="btn btn-lg btn-primary btn-md" value="Cancelar" type="button" onclick="location.href='/GestionCuentasUsuariosPUJ/'" />
 					  	</div>
 					</form>

